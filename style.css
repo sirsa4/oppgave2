@@ -22,9 +22,11 @@ Resources:
       max-height: 100vh;
      
   }
+  /* alle a-tag mister understrek */
   a {
       text-decoration: none;
   }
+  /* container div holder alle html-elementer i body-tag */
   .container {
       width: 95%;
       height: 100%;
@@ -37,7 +39,7 @@ Resources:
       'm'
       ;
   }
-
+/* navigasjon */
   .nav {
       grid-area: n;
       background-color: green;
@@ -46,26 +48,60 @@ Resources:
       grid-area: m;
       background-color: white;
   }
+  /* form tag som inneholder 2 div, 1 div for title label og input, andre div textarea og content label */
   form {
-      background-color: blue;
+      width: 100%;
   }
+  /* div med content label og input */
+  .title {
+      display: flex column;
+  }
+  /* id for input i title div */
+  #title {
+    width: 100%;
+    height: 2rem;
+  }
+  /* div som textarea ligger i */
+  .content{
+    display: flex column;
+  }
+  /* id for textarea */
+  #content {
+      width: 100%;
+  }
+  /* alle 2 label som finnes fårr fet tekst */
+  label {
+      font-weight: bold;
+  }
+  /* store knappen som ligger under textarea */
+  button {
+      display: block;
+      margin: 10px 20%;
+      padding: 1rem 2rem;
+      background-color: #5cd2c1;
+      color: white;
+      
+      
+  }
+
+  /* div container som inneholder alle cards sections */
   .art-container {
     background-color: #fff;
-      display: flex;
+      display: flex column;
       flex-wrap: wrap;
       justify-content: space-between;
       
   }
+  /* stil felles for alle cards */
   .card {
       /* border: 1px solid black; */
-      flex-grow: 0;
-      flex-basis: 32%;
-      width: 200px;
+      flex-grow: 1;
       padding: 1rem 1rem;
       margin: 1% 0;
       display: flex column;
       box-shadow: 2px 4px 5px rgb(233, 211, 211);
   }
+  /* stil for knappene i hver card */
   .btn {
       margin-left: 50%;
       background-color: #5cd2c1;
@@ -73,7 +109,47 @@ Resources:
       padding: .5rem 1rem;
       border-radius: 2px;
   }
+  /* stil for alle p-tag i hver card */
   p {
       color: black;
+      padding: 10px 0;
       opacity: .7;
+  }
+  
+  /* For desktop viewport */
+  @media screen and (min-width: 600px){
+    .art-container {
+          display: flex;
+          flex-wrap: wrap;
+          
+      }
+      .card {
+          /* border: 1px solid black; */
+          flex-grow: 0;
+          flex-basis: 32%;
+          width: 200px;
+      }
+      button {
+        display: block;
+        margin: 10px 55%;
+        padding: 1rem 2rem;
+        background-color: #5cd2c1;
+        color: white;
+    }
+    form {
+        width: 100%;
+    }
+    .title {
+        display: flex column;
+    }
+    #title {
+      width: 35%;
+      height: 2rem;
+    }
+    .content{
+      display: flex column;
+    }
+    #content {
+        width: 65%;
+    }
   }
