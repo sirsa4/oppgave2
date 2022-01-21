@@ -1,0 +1,14 @@
+/* Base styling */
+
+* {
+    /* box-sizing: border-box; */
+  }
+  
+  section,
+  article {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add styling */
+  
