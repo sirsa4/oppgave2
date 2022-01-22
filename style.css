@@ -55,6 +55,7 @@ Resources:
   .main {
       grid-area: m;
       background-color: white;
+      
   }
   /* form tag som inneholder 2 div, 1 div for title label og input, andre div textarea og content label */
   form {
@@ -129,13 +130,17 @@ Resources:
     .art-container {
           display: flex;
           flex-wrap: wrap;
+          gap: 2%;
           
+      }
+      main {
+        margin-left: 15%;
       }
       .card {
           /* border: 1px solid black; */
-          flex-grow: 0;
+          flex-grow: 1;
           flex-basis: 32%;
-          width: 200px;
+         /*  width: 200px; */
       }
       button {
         display: block;
