@@ -64,6 +64,7 @@ Resources:
   /* div med content label og input */
   .title {
       display: flex column;
+      margin: 10px 0;
   }
   /* id for input i title div */
   #title {
@@ -73,10 +74,12 @@ Resources:
   /* div som textarea ligger i */
   .content{
     display: flex column;
+    margin: 10px 0;
   }
   /* id for textarea */
   #content {
       width: 100%;
+    
   }
   /* alle 2 label som finnes fårr fet tekst */
   label {
@@ -84,9 +87,8 @@ Resources:
   }
   /* store knappen som ligger under textarea */
   button {
-      display: block;
-      margin: 10px 20%;
       padding: 1rem 2rem;
+      border-radius: 10px;
       background-color: #5cd2c1;
       color: white;
       
@@ -109,6 +111,7 @@ Resources:
       margin: 1% 0;
       display: flex column;
       box-shadow: 2px 4px 5px rgb(233, 211, 211);
+      text-align: center;
   }
   /* stil for knappene i hver card */
   .btn {
@@ -123,6 +126,19 @@ Resources:
       color: black;
       padding: 10px 0;
       opacity: .7;
+      text-align: start;
+      padding: 5px 20px;
+  }
+
+  /* article buttons and big button container container */
+  .btn-container, .bigBtn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* h2 - article header */
+  h2 {
+    text-align: center;
   }
   
   /* For desktop viewport */
@@ -143,8 +159,6 @@ Resources:
          /*  width: 200px; */
       }
       button {
-        display: block;
-        margin: 10px 55%;
         padding: 1rem 2rem;
         background-color: #5cd2c1;
         color: white;
@@ -175,6 +189,16 @@ Resources:
         justify-content: space-between;
         align-items: center;
         
+    }
+    h2 {
+      text-align: start;
+    }
+    /* for store knappen i form */
+    .bigBtn-container {
+      width: 65%;
+    }
+    .btn-container {
+      justify-content: flex-end;
     }
     /* nav a-lenker */
     .nav-link1{margin-left: 2%;}
